@@ -3,10 +3,10 @@
 This project is a simple and clean survey form built using HTML and CSS. It is designed to collect user information such as name, email, age, role, recommendations, known programming languages/frameworks, and additional comments.
 
 ## Features
-- Responsive and centered form layout
-- Various input types: text, email, number, dropdown, radio buttons, checkboxes, and textarea
-- User-friendly placeholders and labels for accessibility
-- Modern and minimal styling with CSS
+- Responsive and centered form layout.
+- Various input types: text, email, number, dropdown, radio buttons, checkboxes, and textarea.
+- User-friendly placeholders and labels for accessibility.
+- Modern and minimal styling with CSS.
 
 ## What I Learned
 - How to structure HTML forms with different input types
