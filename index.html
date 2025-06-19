@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            background-color: #05c46b;
+            font-family: Verdana;
+        }
+
+        form {
+            background-color: #ffffff;
+            max-width: 500px;
+            /* border: 2px solid red; */
+            margin: 50px auto;
+            padding: 30px 20px;
+        }
+
+        p {
+            text-align: center;
+            padding: 20px;
+            /* border: 2px solid orange; */
+        }
+
+        .form-control {
+            /* border: 2px solid blue; */
+            padding: 10px;
+            margin-bottom: 25px;
+
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-control input,
+        select,
+        textarea {
+            border: 1px solid black;
+            border-radius: 2px;
+            padding: 10px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: block;
+            font-size: 21px;
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="survey-form">
+        <p>Survey Form</p>
+        <div class="form-control">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-control">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" />
+        </div>
+        <div class="form-control">
+            <label for="role">Which option describes you?</label>
+            <select id="role">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="intern">Intern</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Would you recommend GeeksforGeeks to a friend?</label>
+            <label for="recommend-1">
+                <input type="radio" id="recommend-1" name="recommend">Yes
+            </label>
+            <label for="recommend-2">
+                <input type="radio" id="recommend-2" name="recommend">No
+            </label>
+            <label for="recommend-3">
+                <input type="radio" id="recommend-3" name="recommend">Maybe
+            </label>
+        </div>
+        <div class="form-control">
+            <label>Languages and Frameworks known <small>(Checks all that apply)</small></label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">C#
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Javascript
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">Any Comment or suggestions</label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+
+</html>
